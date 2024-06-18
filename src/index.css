@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.result {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: grey;
+    color: white;
+    width: 100px;
+    padding-bottom: 200px;
+
+}
+
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    justify-content: top;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-image {
+    max-width: 60%;
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: 17.5%;  
+    display: block;  
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table {
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.inputbox {
+    margin:10px;
+    width: 300px;
+}
